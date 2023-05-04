@@ -1,0 +1,4 @@
+Matheus Bruns
+João Vitor Lembeck
+
+Sequelize ira criar o banco automaticamente.
