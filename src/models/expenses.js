@@ -16,7 +16,7 @@ const Expenses = database.define("expenses",
             references: { model: "categories", key: "id" }
         },
         value: {
-            type: Sequelize.DECIMAL,
+            type: Sequelize.DECIMAL(10,2),
             allowNull: false
         },
         description: {
