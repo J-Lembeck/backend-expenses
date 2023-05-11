@@ -3,11 +3,12 @@ const app = express();
 const db = require("./db");
 const dotenv = require("dotenv")
 dotenv.config()
-
+const cors = require('cors');
 const expensesRouter = require("./src/routes/expenses");
 const categoriesRouter = require("./src/routes/categories")
 
 const port = process.env.PORT;
+app.use(cors());
 
 db.sync()
     .then(() => {
